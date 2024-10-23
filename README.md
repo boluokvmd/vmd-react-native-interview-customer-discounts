@@ -50,7 +50,7 @@ As part of this project, you are tasked with the following:
 - The page should list all unassigned discounts without any additional actions or buttons.
 
 ####   2. Complete the validateDiscountAssignment Function
-- Implement the validateDiscountAssignment function, which is called whenever a user tries to assign discounts to a customer.
+- Implement the `validateDiscountAssignment` function, which is called whenever a user tries to assign discounts to a customer.
 - The function should validate the discount assignment based on the following business rules:
   - #####   Maximum of 3 Discounts per Customer
     - A customer cannot have more than 3 discounts assigned.
