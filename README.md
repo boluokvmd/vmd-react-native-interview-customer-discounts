@@ -42,31 +42,29 @@ You can start developing by editing the files inside the **app** directory. This
 
 ## Task
 
-#### Requesting Multiple Providers
+As part of this project, you are tasked with the following:
 
-[https://randomuser.me/api/?results=5](https://randomuser.me/api/?results=5)
+####   1. Implement an Unassigned Discounts Page
+- Create a new page that displays all discounts which have not been assigned to any customer.
+- This page should be accessible from the home screen via a "View All Unassigned Discounts" button.
+- The page should list all unassigned discounts without any additional actions or buttons.
 
-#### Filter by nationality
-
-[https://randomuser.me/api/?nat=us,gb](https://randomuser.me/api/?nat=us,gb)
-
-#### Filter by gender
-
-[https://randomuser.me/api/?gender=female](https://randomuser.me/api/?gender=female)
-
-#### Pagination
-
-[https://randomuser.me/api/?page=3&results=10&seed=abc](https://randomuser.me/api/?page=3&results=10&seed=abc)
-
-#### API Errors
-
-```json
-{
-  "error": "There was an error"
-}
-```
+####   2. Complete the validateDiscountAssignment Function
+- Implement the validateDiscountAssignment function, which is called whenever a user tries to assign discounts to a customer.
+- The function should validate the discount assignment based on the following business rules:
+  - #####   Maximum of 3 Discounts per Customer
+    - A customer cannot have more than 3 discounts assigned.
+  - #####   Maximum Total Discount Value
+    - The combined value of the discounts assigned to a customer cannot exceed 20% of their yearly spend.
+  - #####   Total Discount Value Limit
+    - A customer with a higher yearly spend should not have a total discount value less than a customer with a lower yearly spend.
 
 ### Screenshots
 
 ![Customer List](./customer-page.png)
 ![Customer Detail](./customer-detail-page.png)
+
+
+
+
+
